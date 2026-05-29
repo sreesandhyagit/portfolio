@@ -69,8 +69,8 @@ const projects = [
       "Used Bootstrap and SQLite3 for rapid development",
     ],
 
-    github: "#",
-    demo: "#",
+    github: "https://github.com/sreesandhyagit/ToDo_List",
+    demo: "https://react-django-todo-sreesandhya.vercel.app/",
   },
 
   {
