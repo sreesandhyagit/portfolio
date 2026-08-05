@@ -19,7 +19,7 @@ const Contact = () => {
 
         <div className="mt-10 space-y-4 text-lg">
           <p>sreesandhyaajesh@gmail.com</p>
-          <p>+91 94460 85901</p>
+          {/* <p>+91 94460 85901</p> */}
           <p>Kozhikode, Kerala, India</p>
         </div>
 

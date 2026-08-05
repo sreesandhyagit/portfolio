@@ -1,21 +1,55 @@
 const projects = [
   {
-    title: "AddItAI LMS",
+    title: "ADD-it AI LMS",
     tech: "Django + React",
 
     desc:
-      "A role-based marketplace learning management system with JWT authentication, enrollment access, paid/free courses, cart, order management, reviews, dashboards, and secure file access.",
+      "A role-based marketplace Learning Management System with JWT authentication, instructor approval, course enrollment, paid/free courses, shopping cart, order management, ratings & reviews, dashboards, certificate generation, and secure media access.",
 
     features: [
-      "Built REST APIs with Django REST Framework",
+      "Built REST APIs using Django REST Framework",
       "Integrated React frontend using Axios",
-      "Added UUID-based certificate generation",
+      "Implemented role-based dashboards and secure certificate generation",
     ],
 
-    github: "https://github.com/sreesandhyagit/SELF_PROJECTS/tree/master/Online_Learning_Management_System/AddItAI-LMS",
-    demo: "#",
+    github: "#", // Private repository
+    demo: "https://add-it-ai.vercel.app/",
+  },  
+
+  {
+    title: "Student Course Management System",
+    tech: "Django + MySQL",
+
+    desc:
+      "A full-stack web application for managing students, courses, enrollments, and role-based access with authentication, CRUD operations, filtering, pagination, and optimized database queries.",
+
+    features: [
+      "Designed scalable Django backend architecture",
+      "Improved administrative course management",
+      "Implemented secure role-based access control",
+    ],
+
+    github: "#", // Private repository
+    demo: "https://sreesandhya.pythonanywhere.com/",
   },
 
+  {
+    title: "ToDoList",
+    tech: "Python + Django + React",
+
+    desc:
+      "A full-stack task management application with REST APIs, authentication, CRUD operations, and a responsive user interface.",
+
+    features: [
+      "Built backend APIs using Django REST Framework",
+      "Integrated React frontend using Axios",
+      "Used Bootstrap and SQLite3 for rapid development",
+    ],
+
+    github: "https://github.com/sreesandhyagit/ToDo_List",
+    demo: "https://react-django-todo-sreesandhya.vercel.app/",
+  },
+  
   {
     title: "Virtual Cosmos",
     tech: "React + Node.js + Socket.IO",
@@ -25,8 +59,8 @@ const projects = [
 
     features: [
       "Implemented real-time multiplayer communication",
-      "Built proximity-based chat system using Socket.IO",
-      "Developed interactive UI using PixiJS and React",
+      "Built proximity-based chat using Socket.IO",
+      "Developed an interactive UI using PixiJS and React",
     ],
 
     github:
@@ -34,43 +68,6 @@ const projects = [
 
     demo:
       "https://drive.google.com/file/d/1tmikeH__pNXa4C60FfRNjMpk76Ypzdfb/view?usp=sharing",
-  },
-
-  {
-    title: "Student Course Management System",
-    tech: "Django + MySQL",
-
-    desc:
-      "A web system to manage students, courses, and enrollments with role-based access, CRUD functionality, validation, filtering, pagination, and optimized database handling.",
-
-    features: [
-      "Designed scalable Django backend architecture",
-      "Improved manual course administration workflows",
-      "Implemented secure role-specific access",
-    ],
-
-    github:
-      "https://github.com/sreesandhyagit/DJANGO_PROJECT1",
-
-    demo:
-      "https://sreesandhya.pythonanywhere.com/",
-  },
-
-  {
-    title: "ToDoList",
-    tech: "Python + Django + React",
-
-    desc:
-      "A full-stack task management application with REST APIs, authentication, CRUD operations, and responsive UI for efficient daily task tracking.",
-
-    features: [
-      "Built backend APIs using Django REST Framework",
-      "Integrated React frontend with REST APIs",
-      "Used Bootstrap and SQLite3 for rapid development",
-    ],
-
-    github: "https://github.com/sreesandhyagit/ToDo_List",
-    demo: "https://react-django-todo-sreesandhya.vercel.app/",
   },
 
   {
@@ -172,17 +169,6 @@ const Projects = () => {
               {/* Buttons */}
               <div className="flex flex-wrap gap-4 mt-8">
 
-                {project.github !== "#" && (
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noreferrer"
-                    className="bg-gray-900 hover:bg-black text-white px-5 py-3 rounded-xl hover:scale-105 duration-300 shadow-lg"
-                  >
-                    GitHub
-                  </a>
-                )}
-
                 {project.demo !== "#" && (
                   <a
                     href={project.demo}
@@ -191,6 +177,17 @@ const Projects = () => {
                     className="bg-emerald-700 hover:bg-emerald-800 text-white px-5 py-3 rounded-xl hover:scale-105 duration-300 shadow-lg"
                   >
                     Live Demo
+                  </a>
+                )}
+
+                {project.github !== "#" && (
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="bg-gray-900 hover:bg-black text-white px-5 py-3 rounded-xl hover:scale-105 duration-300 shadow-lg"
+                  >
+                    GitHub
                   </a>
                 )}
 
